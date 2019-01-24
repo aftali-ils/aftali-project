@@ -7,3 +7,6 @@ We are made up of developers who have a passion to code in java and create an ad
 
 - A Tomcat server running Tomcat 9 or greater
 - A IDE of your choice (If you are working on the Java staff client then use a java IDE)
+- Sourcetree Git Client (Connect it to the Jira server)
+
+**Jira Server** http://jira.aftali-ils.tk:8080
