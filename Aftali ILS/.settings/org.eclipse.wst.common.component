@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Aftali ILS">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="Aftali_ILS_Staff_Client.jar" deploy-path="/" handle="module:/resource/Aftali ILS Staff Client/Aftali ILS Staff Client">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Aftali_ILS_OPAC.war" deploy-path="/" handle="module:/resource/Aftali ILS OPAC/Aftali ILS OPAC">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Aftali_ILSEJB.jar" deploy-path="/" handle="module:/resource/Aftali ILSEJB/Aftali ILSEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Aftali_ILSConnector.rar" deploy-path="/" handle="module:/resource/Aftali ILSConnector/Aftali ILSConnector">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
