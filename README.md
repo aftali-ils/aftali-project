@@ -10,3 +10,4 @@ We are made up of developers who have a passion to code in java and create an ad
 - Sourcetree Git Client (Connect it to the Jira server)
 
 **Jira Server** http://jira.aftali-ils.tk:8080
+**Confluence Server** http://confluence.aftali-ils.tk:8090
