@@ -1,0 +1,8 @@
+--- library_gb:  ---
+URL: https://pixabay.com/en/books-stack-book-store-1163695/
+Date of Retrieval: 31-1-19
+
+
+--- example_logo ---
+URL: https://pixabay.com/en/reader-book-symbol-icon-reading-310398/
+Date of Retrieval: 31-1-19
