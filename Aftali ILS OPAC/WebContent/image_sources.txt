@@ -6,3 +6,10 @@ Date of Retrieval: 31-1-19
 --- example_logo ---
 URL: https://pixabay.com/en/reader-book-symbol-icon-reading-310398/
 Date of Retrieval: 31-1-19
+
+
+--- ic_clock ---
+https://pixabay.com/en/clock-time-hour-icon-1292829/
+
+--- ic_location ---
+https://pixabay.com/en/icon-marker-map-black-157354/
