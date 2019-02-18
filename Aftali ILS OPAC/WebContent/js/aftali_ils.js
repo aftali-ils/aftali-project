@@ -86,19 +86,22 @@ function myTimer() {
 bttBtn = document.getElementById("btt");
 
 
-var myScrollFunc = function() {
+var showHideBTT = function() {
 	
-  var y = window.scrollY;
+	var y = window.scrollY;
   
-  
-  if (y >= 400) {
+  if (y >= 300) {
+	  
 	  bttBtn.className = "btt-show"
+		  
   } else {
+	  
 	  bttBtn.className = "btt"
+		  
   }
 };
 
-window.addEventListener("scroll", myScrollFunc);
+window.addEventListener("scroll", showHideBTT);
 
 window.onscroll = function() {scrollFunction()};
 
@@ -114,18 +117,18 @@ function scrollFunction() {
 		if (width > 1199) {
 			
 			topBanner.style.padding = "0px";
-			logo.style.height = "80px";
-			logo.style.width = "80px";
-			date.style.fontSize = "19px";
-			loginBtn.style.fontSize = "19px"
+			logo.style.height = "70px";
+			logo.style.width = "70px";
+			date.style.fontSize = "18px";
+			loginBtn.style.fontSize = "16px";
 			
 		} else if (width > 1023 && width < 1200) {
 			
 			topBanner.style.padding = "0px";
-			logo.style.height = "70px";
-			logo.style.width = "70px";
-			date.style.fontSize = "17px";
-			loginBtn.style.fontSize = "18px"
+			logo.style.height = "60px";
+			logo.style.width = "60px";
+			date.style.fontSize = "16px";
+			loginBtn.style.fontSize = "14px"
 			
 		} else if (width > 767 && width < 1024) {
 			
@@ -157,19 +160,19 @@ function scrollFunction() {
 		
 		if (width > 1199) {
 			
-			topBanner.style.padding = "25px";
-			logo.style.height = "135px";
-			logo.style.width = "135px";
-			date.style.fontSize = "32px";
-			loginBtn.style.fontSize = "25px"
+			topBanner.style.padding = "20px";
+			logo.style.height = "100px";
+			logo.style.width = "100px";
+			date.style.fontSize = "28px";
+			loginBtn.style.fontSize = "22px"
 			
 		} else if (width > 1023 && width < 1200) {
 			
-			topBanner.style.padding = "20px";
-			logo.style.height = "125px";
-			logo.style.width = "125px";
-			date.style.fontSize = "30px";
-			loginBtn.style.fontSize = "22px"
+			topBanner.style.padding = "18px";
+			logo.style.height = "90px";
+			logo.style.width = "90px";
+			date.style.fontSize = "28px";
+			loginBtn.style.fontSize = "20px"
 			
 		} else if (width > 767 && width < 1024) {
 			

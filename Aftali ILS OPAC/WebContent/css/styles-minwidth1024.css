@@ -58,7 +58,7 @@ body.fade {
 .top-banner {
 	
 	background-color: #fefefe;
-	padding: 20px;
+	padding: 18px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -69,15 +69,15 @@ body.fade {
 
 .logo {
 	
-	height: 125px;
-	width: 125px;
+	height: 90px;
+	width: 90px;
 }
 
 #date-banner {
 	
 	font-family: calibri;
 	text-align: center;
-	font-size: 30px;
+	font-size: 28px;
 	color: #D83B01;
 }
 
@@ -89,7 +89,7 @@ body.fade {
 	height: auto;
 	width: auto;
 	padding: 8px 13px;
-	font-size: 22px;
+	font-size: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -163,7 +163,7 @@ body.fade {
 	padding-bottom: 15px;
 	display: inline-block;
 	width: 100%;
-	background-color: #01c6d8;
+	background-color: #d3dbea;
 	text-align: center;
 }
 

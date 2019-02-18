@@ -14,9 +14,9 @@
                 
     </head>
         
-    <body>
+    <body id="main_content_container">
     
-     	<div id="main_content_container">
+     	<div>
      
 	    	<div class="top-banner sticky" id="top-banner">   
 	     		
