@@ -28,100 +28,191 @@
 	.col-12 {width: 100%;}
 }
 
-body {
+html {
 	
-    margin: -1px;
-	padding: 1%;
-    background-color: #fefefe;
-    background-image: url(../images/library_bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+	scroll-behavior: smooth;
 }
 
+body {
+
+	margin: 0;
+	opacity: 1;
+	transition: 0.7s opacity;
+}
+
+body.fade {
+	
+    opacity: 0;
+    transition: none;
+}
+
+/* --------------------------------------------- Top Banner Start ---------------------*/
+.sticky {
+	
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.top-banner {
+	
+	background-color: #fefefe;
+	padding: 18px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	transition: 0.2s;
+}
+
+.logo {
+	
+	height: 90px;
+	width: 90px;
+}
+
+#date-banner {
+	
+	font-family: calibri;
+	text-align: center;
+	font-size: 28px;
+	color: #D83B01;
+}
+
+.login-top-button {
+	
+	background-color: #D83B01;
+	border: 1px solid #D83B01;
+	color: #fff;
+	height: auto;
+	width: auto;
+	padding: 8px 13px;
+	font-size: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-top-button:hover {
+	
+	background-color: #01d813;
+	border: 1px solid #01d813;
+	
+}
+/* --------------------------------------------- Top Banner End ---------------------*/
+
+
+/* --------------------------------------------- Library Info Banner Start ---------------------*/
 .header-sections {
 
-	height: 260px;
-	background-color: #000;
-	opacity: 0.7;
-	filter: alpha(opacity = 70);
+	background-color: #D83B01;
+	height: 40%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: flex-start;
+	padding-top: 0;
+}
+
+.info-sections {
+	
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 5px;
+}
+
+.library-name {
+
+	margin-left: 5%;
+	font-size: 75px;
+	font-family: calibri;
+	color: #fff;
+}
+
+.library-details-text {
+	
+	margin-left: 20px;
+	height: 25px;
+	font-size: 22px;
+	font-family: calibri;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 }
 
+.info-icons {
+
+	height: 40px;
+	width: 40px;
+}
+/* --------------------------------------------- Library Info Banner End ---------------------*/
 
 
-.logo {
+
+/* --------------------------------------------- Sub-header / Search Bar Banner Start ---------------------*/
+
+.search-container {
 	
-	height: 150px;
-	width: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: inline-block;
+	width: 100%;
+	background-color: #d3dbea;
+	text-align: center;
 }
 
-.welcome-header-text {
-
-	font-size: 70px;
-	font-family: calibri;
-	color: #ffffff;
-}
-
-.welcome-subheader-text {
+.library-field {
 	
-	font-size: 35px;
-	font-family: calibri;
-	color: #ffffff;
+	display: inline-block;
+	width: 90%;
+	height: 50px;
+	border: 1px solid #fff; 
 }
 
-.login-header-text {
+.search-bar {
+
+	border: 1px solid #fff;
+	width: 80%;
+	height: 50px;
+}
+
+.search-button {
 	
-	font-size: 22px;
-	font-family: calibri;
-	color: #ffffff;
+	background-color: #D83B01;
+	border: 1px solid #D83B01;
+	color: #fff;
+	width: 12%;
+	height: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.input-fields {
-	
-	width: 180px; 
-	height: 35px; 
-	border: 1px solid #999999; 
-	padding: 2px;
-}
+.search-button:hover {
 
-input,
-input::-webkit-input-placeholder {
-    font-size: 20px;
-    line-height: 3;
-    text-align: center;
-	font-style: italic;
+	background-color: #01d813;
+	border: 1px solid #01d813;
 }
+/* --------------------------------------------- Sub-header / Search Bar Banner End ---------------------*/
 
-.login-button {
-	
-	width: 120px; 
-	height: 30px;
-	padding: 2px;
-	margin-top: 2px;
-	margin-bottom: 5px;
-	font-weight: bold;
-    font-size: 20px;
-}
 
+/* --------------------------------------------- Main Page Sections Start ---------------------*/
 .left-main {
 
 	float: left;
 	height: auto;
-	min-height: 500px;
-	background-color: #9fb1ce;
-  	opacity: 0.7;
-	filter: alpha(opacity = 70);
+	min-height: 900px;
+	background-color: #393939;
 }
 
 .left-main-header {
 	
 	text-align: center;
-	font-size: 30px;
+	font-size: 32px;
 	font-family: calibri;
 	font-style: italic;
 	color: #fff;
@@ -129,51 +220,137 @@ input::-webkit-input-placeholder {
 
 .middle-main {
 
+	
 	float: left;
 	height: auto;
-	min-height: 500px;
-	background-color: #546b91;
- 	opacity: 0.7;
-	filter: alpha(opacity = 70);
+	min-height: 900px;
 }
 
 .middle-main-header {
 	
 	text-align: center;
-	font-size: 30px;
+	font-size: 32px;
 	font-family: calibri;
 	font-style: italic;
-	color: #fff;
+	color: #323232;
 }
 
 .right-main {
 
-	float: left;
+	display: block;
+	padding: 20px;
+	text-align: center;
 	height: auto;
-	min-height: 500px;
-	background-color: #1e365e;
- 	opacity: 0.7;
-	filter: alpha(opacity = 70);
+	min-height: 900px;
+	background-color: #393939;
 }
 
-.right-main-header {
+.right-main-login {
 	
-	text-align: center;
-	font-size: 30px;
+	
+	height: auto;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.login-header-text {
+	
+	font-size: 25px;
 	font-family: calibri;
-	font-style: italic;
 	color: #fff;
 }
+
+.input-fields {
+	
+	width: 100%; 
+	height: 40px; 
+	border: 1px solid #999999; 
+	padding: 5px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 2;
+    text-align: center;
+    font-style: italic;
+}
+
+input:focus {
+	
+	border: 1px solid #212121;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-button {
+	
+	background-color: #D83B01;
+	border: 1px solid #D83B01;
+	color: #fff;
+	padding: 5px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%; 
+	height: auto;
+    font-size: 15px;
+}
+
+
+
+.login-button:hover {
+	
+	background-color: #01d813;
+	border: 1px solid #01d813;
+	
+}
+/* --------------------------------------------- Main Page Sections End ---------------------*/
 
 
 .footer {
 
 	clear: both;
 	width: 100%;
-	padding: 40px;
-	background-color: #000000;
+	padding: 20px;
+	background-color: #D83B01;
 	color: #ffffff;
 	text-align: center;
-	font-size: 30px;
-	opacity: 0.7;
-	}
+	font-size: 22px;
+}
+
+.footer-br {
+	
+	display: none;
+}
+
+.footer-divider {
+	
+	display: inline-block;
+}
+
+.btt {
+	
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 5px;
+	background-color: #fff;
+	z-index: 1;
+	border-top: 1px solid #fff;
+	border-radius: 15px 15px 0 0;
+}
+
+.btt-show {
+	
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	right: 5px;
+	background-color: #fff;
+	z-index: 1;
+	border-top: 1px solid #fff;
+	border-radius: 15px 15px 0 0;
+
+}
